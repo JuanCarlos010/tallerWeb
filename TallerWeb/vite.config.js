@@ -10,4 +10,21 @@ export default defineConfig({
       },
     }),
   ],
+  build: {
+    rollupOptions: {
+      external: [
+        'express', 
+        'cors', 
+        './server.js', 
+        './code.js',
+        'node:events',
+        'node:path',
+        'url',
+        'fs'
+      ]
+    }
+  },
+  optimizeDeps: {
+    exclude: ['express', 'cors', 'server.js', 'code.js']
+  }
 })
