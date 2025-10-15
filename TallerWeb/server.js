@@ -96,8 +96,8 @@ app.get("/dataInfoQuery", (req, res) => {
 app.listen(port, () => {
   console.log(`Servidor corriendo en http://localhost:${port}`);
   console.log(`Endpoint disponible: http://localhost:${port}/allData`);
-  console.log(`Endpoint disponible: http://localhost:${port}/dataInfoId/9`);
+  console.log(`Endpoint disponible: http://localhost:${port}/dataInfoId/11`);
   console.log(`Endpoint disponible: http://localhost:${port}/dataInfoStatus/false`);
   console.log(`Endpoint disponible: http://localhost:${port}/dataInfoQuery?nameBook=Lealtad`);
-  console.log(`http://localhost:${port}/dataInfoQuery?id=5&datePublish=10/8/2010&gender=Espada`);
+  console.log(`Endpoint disponible: http://localhost:${port}/dataInfoQuery?id=5&datePublish=10/8/2010&gender=Espada`);
 });
